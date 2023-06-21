@@ -1,44 +1,59 @@
-# MBDS Madagascar2022_2023_front
+# MBDS Madagascar2022_2023_api
 
-# AssignmentApp
+## Membre du groupe 
+- N° 51, RASOAHARISOA Nantenaina Zotoavina
+- N° 47, RANDRIANARIVELO Herimanarivo Finoana Mandresy
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.1.
+## Repositories
+- Front : https://github.com/zotoavina/mbds_assignement_front.git
+- Api : https://github.com/Finoana71/mbds_assignment_api.git
 
-## Development server
+## Lien sur Render.com
+- Front : https://mbds-assignment-51-47-front.onrender.com/
+- Api : https://mbds-assignment-51-47-api.onrender.com/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-### Utilisateurs
-#### Admin: 
-			email: mcruddas0@census.gov  	Mot de passe: pkElid3n4v
-#### Utilisateur simple: 
-			email: kheight1@ftc.gov  	Mot de passe: VcaUca
+## Prérequis techniques
+- Version node : v18.16.0
+- Version npm: 9.5.1
 
 ## Fonctionnalités
-### 1) Authentification
-### 2) Liste des assignements
-- Scroll infini
-- Deux onglets séparés: rendu et non rendu
-- Drag and drop pour rendre un assignement(utilisateur admin)
-- Affichage avec des cards
+### 1) Collections
+Nouvelles collections:
+	  - Utilisateurs
+	  - Elèves
+	  - Matières
+Peuplement de la base dans le back end: utilisateurs, elèves, matières et assignements. 
+### 2) Connexion
+Utilisation de jwt token, bcrypt pour hacher les mots de passes
+### 3) Matières
+Récupérations des toutes les lignes
+### 4) Elèves
+Récupérations des toutes les lignes
+### 5) Assignements
+	- Création	
+	- Mise à jour
+	- Liste avec pagination
+	- Récupération par id
+	- Suppression
+	- Rendre un assignment
+Utilisation des services et controllers
 
-### 3) Création d'un assignement
-- Utilisation d'un stepper: 
-	-	Devoir: titre et date de rendu
-	-	Matière: séléction d'une matière
-	- 	Elève: séléction d'un élève
-- Utilisation de ReactiveFormsModule pour la validation
-- Utilisation d'un snackBar pour afficher des messages d'erreurs et succès
+## Lancement du projet
+- Installez les dépendances:
+	npm install
+- Démarrer l'application:
+	node server.js
 
-
-### 4) Détail assignement 
-Affichage pour plus de détails sur un assignement: photo, remarques, note 
-
-## access token
-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
 
 ## Documentations et aides
-https://stackoverflow.com/questions/65786238/change-color-of-matsnackbar
-Ajout css snackbar
+https://dev.to/ifeanyichima/what-is-ref-in-mongoosejs-4o2h
+Pour ajouter les references eleve, matiere dans assignement avec l'aide de chatGPT
 
-https://angular.io/guide/reactive-forms
-ReactiveFormsModule 
+
+https://www.geeksforgeeks.org/mongoose-insertmany-function/
+Pour inserer les données d'initialisation
+
+https://www.tabnine.com/code/javascript/functions/bcryptjs/hashSync
+Pour hacher les mot de passes
+
+Aide de chatGpt pour peupler la collection d'assignments
